@@ -1,0 +1,20 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "constellation-toolkit",
+  "version": "0.1.0",
+  "description": "A conversational software-building workflow using existing host tools, selective Constellation guidance and concise project continuity.",
+  "author": {"name": "Pedro"},
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Constellation Toolkit",
+        "shortDescription": "From idea to working software",
+        "longDescription": "One accountable lead investigates existing context, recommends a useful slice, builds authorized work and reports actual verification. Conditional engineering, design and security guidance supports the task. Native Codex profiles are installed separately on the local host.",
+        "developerName": "Pedro",
+        "category": "Productivity",
+        "capabilities": [],
+        "defaultPrompt": "Use Constellation to help me build or resume this software project."
+      }
+    }
+  }
+}

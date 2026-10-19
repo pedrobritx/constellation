@@ -27,6 +27,8 @@ Use only the knowledge needed for the current slice:
 
 For a selected capability, read its current AGENTS.md and required context at a recorded revision, then only task-relevant role/playbook material. Do not clone unselected libraries, copy policy catalogues or import every template. If required guidance is unavailable, disclose the gap and resolve it or obtain an approved alternative before dependent work; never silently claim coverage.
 
+Read [runtime.md](references/runtime.md) when selecting tools, checking connections or delegating to optional installed native profiles.
+
 Disciplines are review lenses, not compulsory additional agents. Use one lead by default. Delegate only with authorization, actual host support and a useful bounded task; preserve shared interfaces and reconcile outputs. Describe review as independent only when it actually was.
 
 ## Deliver and leave a usable continuation

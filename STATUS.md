@@ -1,3 +1,27 @@
+# Current toolkit status
+
+Updated 19 October 2026 for `constellation-toolkit-001`.
+
+Implemented and installed: the existing `constellation-workflow` plus its conditional runtime reference, four optional native profiles, a Python 3.11+ installer/verifier/connection inventory and a skills-only packager. The installer updated one existing owned file after backing it up; all eight installed files matched source. No unrelated configuration/agent/skill was replaced. The only MCP configuration addition is the authorized public `openaiDeveloperDocs` connection, installed through the native CLI. Host permissions and user model settings remain authoritative.
+
+Actual verification:
+
+- Adopted Polaris v1 planner: `ready`, Axis and Sentinel selected, no coverage gaps. Reviewed revisions remain those in the workflow document; Meridian was read for compatibility.
+- Installer regression suite: eight tests passed, covering repeatability, unrelated-file preservation, drift/update backups, target symlinks/non-files/hardlinks, source symlink rejection and missing profiles. Independent review found three issues; all were corrected and regression-tested. Independent re-review confirmed all three fixes and reran all eight tests successfully, with no new material finding.
+- Skill Creator validation: passed in an isolated environment with PyYAML 6.0.3. The initial bundled Python attempt lacked PyYAML; no runtime dependency was added to this repository.
+- Source/installed hashes and TOML parsing: passed. Profiles contain only the three required fields and no model, provider, permission or MCP override.
+- Independent instruction-based rehearsal: new idea, resumed project, UI states and sensitive export. Useful bounded recommendations without questions; no unsafe recommendation observed. Fixtures had no application source, so these were behavioural recommendations, not implementation/security/accessibility proof.
+- Fresh Codex CLI session discovered `constellation-workflow` and the custom reviewer type. An ephemeral spawn failed with a thread-history loading error. One normal-session retry selected `constellation-reviewer`, waited for its return and reported successful file inspection. Other profiles were structurally validated, not individually activated.
+- Existing GitHub identity and Figma identity tools returned successfully; no duplicate connection added. Public Docs MCP initialization, tool listing and a real documentation search succeeded. New tools were not injected into this already-running desktop chat.
+- Private account plugin saved as `plugins_6ad64531e1848191bf4ffb431e503334`, release `pluginrel_6ad6453352008191a35910c9575abd9b`; read-back contained the expected workflow and references. Saved is separate from installed/selected in ChatGPT; current plugin search did not list it. Open [Constellation Toolkit](https://chatgpt.com/plugins/plugins_6ad64531e1848191bf4ffb431e503334) to install/select it on that surface.
+- Package integrity and `git diff --check`: passed. No application build/type/lint toolchain exists here; the implementation is Python tooling, configuration and instructions. No deployment, merge, public release, live-data operation or paid service was performed.
+
+The local toolkit is usable now through `$constellation-workflow`. A real product delivery, human acceptance and ChatGPT-side workflow activation remain separate future evidence. Existing A0/VIA scope and governance are unchanged.
+
+---
+
+## Preserved previous workflow record
+
 # Status
 
 Updated 19 October 2026 for `constellation-codex-workflow-001`.
