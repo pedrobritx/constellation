@@ -6,7 +6,7 @@ The first integration boundary is the request/handoff contract owned by Polaris.
 
 ## Delivery boundary
 
-Current deliverables are repository ownership, explicit adoption configuration and contribution scope. A future thin application slice should load a project, show its enabled disciplines and request scope, expose a reviewable handoff plan and display evidence/coverage gaps. Visual editing, code generation/execution, credentials, persistence, collaboration and deployment each need a concrete design and implementation decision before they become product claims.
+Current deliverables include repository ownership, explicit adoption configuration, contribution scope and an instruction-based [Codex workflow](codex-workflow.md). The workflow is the first usable conversational slice; it does not implement the planned application or an autonomous execution service. A future thin application slice should load a project, show its enabled disciplines and request scope, expose a reviewable handoff plan and display evidence/coverage gaps. Visual editing, code generation/execution, credentials, persistence, collaboration and deployment each need a concrete design and implementation decision before they become product claims.
 
 Use the existing project stack when one exists. The owner's TypeScript/Next.js/React preferences can guide a new application decision, but this scope record does not install a framework, backend, cloud provider or paid service. No user-facing application exists yet.
 
@@ -17,3 +17,7 @@ Use the existing project stack when one exists. The owner's TypeScript/Next.js/R
 - Any subset can be selected; missing required sources fail visibly and excluded requested scopes remain unverified.
 - Product-specific code/design/security records stay in the product; reusable changes stay in the discipline.
 - Plans, implemented behaviour, automated checks and independent observations remain distinguishable.
+
+## Codex-first product direction
+
+Start with a natural-language software request, investigate existing context, recommend a manageable first outcome, resolve consequential missing choices, then implement within authorization and verify the result. Ask conversationally and reuse known answers; neither a rigid interview nor a named pilot is required to start. The next naturally occurring software request may supply real-adopter evidence. Existing A0 roadmap and VIA candidate records remain proposals/tracking for their own scope; this additive workflow does not execute that candidate, complete M2, or amend adopted governance.

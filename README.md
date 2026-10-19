@@ -13,4 +13,6 @@ Requests normally enter through **[Polaris](https://github.com/pedrobritx/polari
 
 Each discipline remains independently usable. [constellation.json](constellation.json) records this product's adoption choices. Disable a discipline explicitly with a reason; arrange alternative coverage for affected requirements. Governance adoption is separate from discipline adoption. The shared [composition contract](https://github.com/pedrobritx/polaris/blob/main/integration/README.md) owns the protocol; this product does not fork it.
 
+For the implemented Codex-first entry point, see [the lightweight workflow](docs/codex-workflow.md). It supports conversation and authorized delivery in an existing Codex host; the planned hybrid application remains future scope.
+
 Start with [AGENTS.md](AGENTS.md) and [product scope](docs/product.md). Product source, UX, decisions and execution evidence belong here. Reusable methods, shared design components and security review guidance belong in their owning repositories.

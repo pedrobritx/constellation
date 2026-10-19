@@ -1,0 +1,4 @@
+interface:
+  display_name: "Constellation workflow"
+  short_description: "From a software idea to a useful Codex delivery"
+  default_prompt: "Use $constellation-workflow to help me shape and build this software idea."
